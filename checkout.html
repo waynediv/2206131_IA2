@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Checkout - Elegance Attire</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">Elegance Attire</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container checkout-section">
+    <section class="cart-summary" aria-labelledby="summary-heading">
+      <h2 id="summary-heading">Order Summary</h2>
+      <p> Classic Black Tuxedo: $249.99 (1 x $249.99)</p>
+      <p>Elegant Evening Gown: $299.99 (1 x $299.99)</p>
+      <p>Navy Slim-Fit Suit: $259.99 (1 x $259.99)</p>
+      <p>Red Satin Evening Gown: $399.99 (1 x $399.99)</p>
+      <p>Subtotal: $1,209.96</p>
+      <p>Discount (10%): -$121.00</p>
+      <p>Tax (8%): $87.12</p>
+      <p><strong>Total: $1,176.08</strong></p>
+    </section>
+
+    <form id="checkout-form" aria-labelledby="shipping-heading" action="invoice.html" method="get" novalidate>
+      <h2 id="shipping-heading">Shipping Details</h2>
+      <fieldset>
+        <legend>Shipping Information</legend>
+
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required aria-required="true" />
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required aria-required="true" />
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required aria-required="true" />
+
+        <label for="zip">Zip Code:</label>
+        <input type="text" id="zip" name="zip" required aria-required="true" pattern="\d{5}" title="Five digit zip code" />
+
+        <label for="amount">Amount Being Paid:</label>
+        <input type="text" id="amount" name="amount" value="$1,176.08" readonly aria-readonly="true" />
+      </fieldset>
+
+      <div class="button-group">
+        <button type="submit" class="btn confirm">Confirm</button>
+        <button type="reset" class="btn clear">Clear All</button>
+        <a href="cart.html" class="btn cancel-link">Cancel</a>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Elegance Attire. All rights reserved.</p>
+  </footer>
+</body>
+</html>

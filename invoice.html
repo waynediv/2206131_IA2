@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Invoice - Elegance Attire</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">Elegance Attire</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="invoice-section" aria-labelledby="invoice-heading">
+      <h2 id="invoice-heading">Invoice</h2>
+
+      <div class="invoice-meta">
+        <p><strong>Date:</strong> July 5, 2025</p>
+        <p><strong>Order ID:</strong> EA-INV-2025-001</p>
+        <p><strong>Customer:</strong> Wayne Lindsay</p>
+      </div>
+
+      <table class="invoice-table" aria-describedby="invoice-table-desc">
+        <caption id="invoice-table-desc">Summary of Purchased Items</caption>
+        <thead>
+          <tr>
+            <th scope="col">Product</th>
+            <th scope="col">Price</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Subtotal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Classic Black Tuxedo</td>
+            <td>$249.99</td>
+            <td>1</td>
+            <td>$249.99</td>
+          </tr>
+          <tr>
+            <td>Elegant Evening Gown</td>
+            <td>$299.99</td>
+            <td>1</td>
+            <td>$299.99</td>
+          </tr>
+          <tr>
+            <td>Navy Slim-Fit Suit</td>
+            <td>$259.99</td>
+            <td>1</td>
+            <td>$259.99</td>
+          </tr>
+          <tr>
+            <td>Red Satin Evening Gown</td>
+            <td>$399.99</td>
+            <td>1</td>
+            <td>$399.99</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">Subtotal</td>
+            <td>$1,209.96</td>
+          </tr>
+          <tr>
+            <td colspan="3">Discount (10%)</td>
+            <td>-$121.00</td>
+          </tr>
+          <tr>
+            <td colspan="3">Tax (8%)</td>
+            <td>$87.12</td>
+          </tr>
+          <tr>
+            <td colspan="3"><strong>Total</strong></td>
+            <td><strong>$1,176.08</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <p class="invoice-note">Thank you for shopping with Elegance Attire. Your order will be shipped within 3–5 business days.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Elegance Attire. All rights reserved.</p>
+  </footer>
+</body>
+</html>
